@@ -1,0 +1,108 @@
+*{
+    font-family: "Hanken Grotesk";
+    font-size: 18px;
+    box-sizing:border-box;
+}
+body{
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.maintain{
+    display: flex;
+    box-shadow: 0px 5px 10px 5px hsla(221, 100%, 96%);
+    border-radius: 5%;
+}
+.main{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 50px;
+    width: 330px;
+    height: 470px;
+    background-image:linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%)) ;
+    border-radius: 5%;
+}
+.tain{
+    color: hsl(224, 30%, 27%);
+    width: 330px;
+    height: 470px;
+    padding: 30px;
+    font-weight: 900;
+}
+.indent{
+    display: flex;
+    justify-content: space-between;
+    text-indent: 20px;
+    margin:40px 0 ;
+}
+.grey{
+    color: hsl(241, 100%, 89%);
+}
+.circle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+    width: 150px;
+    height: 150px;
+    margin: 30px 0;
+}
+p{
+    text-align: center;
+}
+.great{
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+.titan{
+    font-size: 3rem;
+}
+.title{
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+button{
+    width: 100%;
+    background-color: hsl(224, 30%, 27%);
+    border: none;
+    padding: 20px;
+    border-radius: 2rem;
+    color: white;
+}
+button:hover{
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+.c1{
+    color:hsl(0, 100%, 67%);
+}
+.c2{
+    color:hsl(39, 100%, 56%);
+}
+.c3{
+    color: hsl(166, 100%, 37%);
+}
+.c4{
+    color: hsl(234, 85%, 45%);
+}
+.dark{
+    color: hsl(224, 30%, 27%,0.5);
+}
+@media screen and (max-width: 500px){
+    .maintain{
+        flex-direction: column;
+    }
+    .main,.tain{
+        width: 100%;
+        border-radius: 0 0 10% 10%;
+    }
+    body{
+        align-items: flex-start;
+    }
+}
